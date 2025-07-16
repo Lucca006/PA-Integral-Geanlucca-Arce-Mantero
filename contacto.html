@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Ruido Sagrado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-music me-2"></i>Ruido Sagrado
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-home me-1"></i>Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html">
+            <i class="fas fa-guitar me-1"></i>Servicios
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">
+            <i class="fas fa-envelope me-1"></i>Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container my-5">
+    <h2 class="text-center">Contáctanos</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Enviar</button>
+    </form>
+
+    <div id="rock-alert" class="rock-alert" style="display:none;">
+      <i class="fas fa-bolt"></i> ¡Gracias por contactarnos! Tu mensaje ha sido enviado. <i class="fas fa-guitar"></i>
+    </div>
+
+    <h3 class="mt-5">Ubicación</h3>
+    <div class="ratio ratio-16x9">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.682640524217!2d-81.6948186845636!3d41.50860797925313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fa8c7e3b7e8b%3A0x8e2e7b7e7e7e7e7e!2sRock%20%26%20Roll%20Hall%20of%20Fame%2C%201100%20E%209th%20St%2C%20Cleveland%2C%20OH%2044114%2C%20Estados%20Unidos!5e0!3m2!1ses!2ses!4v1710530000000!5m2!1ses!2ses"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="social-icons text-center mt-4">
+  <p class="mb-2">Síguenos en redes sociales</p>
+  <a href="https://facebook.com/Metallica" class="me-3 red-social" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+  <a href="https://instagram.com/therollingstones" class="me-3 red-social" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+  <a href="https://youtube.com/user/QueenOfficial" class="red-social" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+  <p class="mt-3 mb-0" style="font-size: 0.95em;">&copy; 2025 Música Rock. Todos los derechos reservados.</p>
+</div>
+
+<script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("rock-alert").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("rock-alert").style.display = "none";
+    }, 5000);
+    this.reset();
+  });
+</script>
+
+</body>
+</html>

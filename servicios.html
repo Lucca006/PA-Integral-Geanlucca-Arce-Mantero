@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios - Ruido Sagrado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-music me-2"></i>Ruido Sagrado
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-home me-1"></i>Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html">
+            <i class="fas fa-guitar me-1"></i>Servicios
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">
+            <i class="fas fa-envelope me-1"></i>Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Servicios</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-danger">
+          <img src="img/3.jpg" class="card-img-top" alt="Clases de Guitarra Rock">
+          <div class="card-body">
+            <h5 class="card-title">Clases de Guitarra Rock</h5>
+            <p class="card-text">Aprende riffs y solos de las mejores bandas de rock con profesores especializados.</p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalGuitarra">Ver más</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-danger">
+          <img src="img/2.jpg" class="card-img-top" alt="Organización de Conciertos">
+          <div class="card-body">
+            <h5 class="card-title">Organización de Conciertos</h5>
+            <p class="card-text">Producción de eventos, tributos y festivales en vivo con bandas legendarias.</p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalEventos">Ver más</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-danger">
+          <img src="img/4.jpg" class="card-img-top" alt="Colección de Discos">
+          <div class="card-body">
+            <h5 class="card-title">Colección de Discos</h5>
+            <p class="card-text">Descubre y adquiere vinilos, CDs y coleccionables de tus artistas favoritos.</p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDiscos">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="modalGuitarra" tabindex="-1" aria-labelledby="modalGuitarraLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white border-danger">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalGuitarraLabel">Clases de Guitarra Rock</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Ofrecemos clases personalizadas para todos los niveles, desde principiante hasta avanzado. Aprende técnicas de guitarra eléctrica, acústica, teoría musical y los solos más emblemáticos del rock. ¡Inscríbete y vive la experiencia rockera!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEventos" tabindex="-1" aria-labelledby="modalEventosLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white border-danger">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEventosLabel">Organización de Conciertos</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Nos encargamos de la producción y logística de conciertos, festivales y tributos a bandas legendarias. Contamos con equipos profesionales y alianzas con recintos reconocidos. ¡Vive el mejor espectáculo en vivo!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalDiscos" tabindex="-1" aria-labelledby="modalDiscosLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white border-danger">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDiscosLabel">Colección de Discos</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Explora nuestra tienda con vinilos, CDs y memorabilia original de tus artistas favoritos. Productos exclusivos, ediciones limitadas y envíos a todo el país. ¡Haz crecer tu colección rockera!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-neon-lead text-white rounded shadow p-4 my-4 neon-glow">
+  <ul class="nav nav-tabs mb-3" id="infoTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="info-web-tab" data-bs-toggle="tab" data-bs-target="#info-web" type="button" role="tab" aria-controls="info-web" aria-selected="true">Web</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="info-marketing-tab" data-bs-toggle="tab" data-bs-target="#info-marketing" type="button" role="tab" aria-controls="info-marketing" aria-selected="false">Marketing</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="info-soporte-tab" data-bs-toggle="tab" data-bs-target="#info-soporte" type="button" role="tab" aria-controls="info-soporte" aria-selected="false">Soporte</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="infoTabsContent">
+    <div class="tab-pane fade show active" id="info-web" role="tabpanel" aria-labelledby="info-web-tab">
+      <h5>Web</h5>
+      <p>Desarrollo y mantenimiento de sitios web para bandas, festivales y proyectos musicales. Diseño moderno, integración multimedia y optimización para buscadores.</p>
+    </div>
+    <div class="tab-pane fade" id="info-marketing" role="tabpanel" aria-labelledby="info-marketing-tab">
+      <h5>Marketing</h5>
+      <p>Promoción digital, gestión de redes sociales y campañas publicitarias para artistas y eventos de rock. Estrategias creativas para aumentar tu alcance y conectar con fans.</p>
+    </div>
+    <div class="tab-pane fade" id="info-soporte" role="tabpanel" aria-labelledby="info-soporte-tab">
+      <h5>Soporte</h5>
+      <p>Asistencia técnica y atención personalizada para músicos, organizadores y público. Solución de problemas, asesoría y soporte en tiempo real durante tus eventos y presentaciones.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h3 class="text-center mb-4 text-danger">Preguntas Frecuentes</h3>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item bg-dark text-white border-danger">
+      <h2 class="accordion-header" id="faq1-heading">
+        <button class="accordion-button bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+          ¿Cómo puedo inscribirme a las clases de guitarra?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Puedes inscribirte a través de nuestro formulario de contacto o visitando nuestra sede. También puedes escribirnos por redes sociales para más información.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-danger">
+      <h2 class="accordion-header" id="faq2-heading">
+        <button class="accordion-button collapsed bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+          ¿Qué métodos de pago aceptan para la compra de discos?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Aceptamos pagos con tarjeta de crédito, débito, transferencias bancarias y efectivo en nuestra tienda física.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-danger">
+      <h2 class="accordion-header" id="faq3-heading">
+        <button class="accordion-button collapsed bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+          ¿Puedo contratar la organización de un evento privado?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Sí, organizamos eventos privados y corporativos. Contáctanos para cotizar y planificar tu evento personalizado con bandas de rock en vivo.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="social-icons text-center mt-4">
+  <p class="mb-2">Síguenos en redes sociales</p>
+  <a href="https://facebook.com/Metallica" class="me-3 red-social" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+  <a href="https://instagram.com/therollingstones" class="me-3 red-social" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+  <a href="https://youtube.com/user/QueenOfficial" class="red-social" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+  <p class="mt-3 mb-0" style="font-size: 0.95em;">&copy; 2025 Música Rock. Todos los derechos reservados.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
